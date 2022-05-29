@@ -20,6 +20,29 @@
         background: rgb(129, 91, 91);
         color: white;
       }
+      ul li {
+        margin: 1rem;
+        border-bottom: solid black 1px;
+      }
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 4rem;
+      }
+      p {
+        direction: rtl;
+        text-align: justify;
+        margin: 1rem;
+      }
+      ol {
+        list-style: decimal;
+        direction: rtl;
+        padding: 2rem;
+      }
+      ol > li {
+        margin: 1rem;
+        border-bottom: red solid 1px;
+      }
     </style>
   </head>
   <body>
@@ -33,9 +56,7 @@
       data-perspective="1000"
     >
       <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <h1 style="font-size: 3rem; text-align: center">
-          ارائه ۴ درس آخر دینی نهم
-        </h1>
+        <h1>ارائه ۴ درس آخر دینی نهم</h1>
         <img
           src="data:image/jpeg;base64,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"
           alt="تصویر کتاب دینی"
@@ -46,7 +67,178 @@
           آرین عبداللهیان
         </p>
       </div>
-      <div class="step slide" data-x="0" data-y="-1500">hello2</div>
+      <div class="step slide" data-x="0" data-y="-1500">
+        <h1>درس نهم - انقلاب اسلامی ایران</h1>
+        <img
+          src="https://elmond.ir/images/product/toy/200917175428119929429.jpg"
+          alt=""
+          width="600"
+          style="display: block; margin: 5rem auto"
+        />
+      </div>
+      <div class="step slide" data-x="3000" data-y="-1500">
+        <h1>ایران پیش از انقلاب</h1>
+        <ul
+          style="
+            list-style: initial;
+            padding: 1rem;
+            direction: rtl;
+            font-size: 17pt;
+          "
+        >
+          <li>ده ها هزار مستشار خارجی ایران را در دست داشتند</li>
+          <li>
+            وضعیت بهداشت در شهر ها و روستاها اسفناک بود و ده ها هزار پزشک
+            پاکستانی و هندی در ایران مشغول به کار بودند
+          </li>
+          <li>کمتر از نیم درصد مردم می‌توانستند به دانشگاه بروند</li>
+          <li>از ۵۴۰۰۰ روستا فقط ۲۰۰۰ روستا برق داشت</li>
+          <li>بیشتر نمایندگان مجلس توسط شاه انتخاب می‌شدند</li>
+          <li>
+            شاه بسیاری از تصمیمات خود را بایستی با اجازه و تایید سفارتخانه های
+            آمریکا و انگلیس میگرفت
+          </li>
+          <li>معادن مختلف و منابع نفت و گاز ما به دست غربی ها به یغما میرفت</li>
+          <li>
+            حکومت نه تنها توجهی به دین نداشت;بلکه با دایر کردن مراکز فساد،
+            جوانان را از دین دور میکرد
+          </li>
+        </ul>
+      </div>
+      <div class="step slide" data-x="3000" data-y="-500">
+        <h1>ایران پس از انقلاب</h1>
+        <ul
+          style="
+            list-style: initial;
+            padding: 1rem;
+            direction: rtl;
+            font-size: 12pt;
+          "
+        >
+          <li>
+            رشد نرخ باسوادی به حدود ۹۰ درصد. بیش از ده میلیون نفر فارغ التحصیل
+            دانشگاه و حدود پنج میلیون نفر نیز مشغول به تحصیل
+          </li>
+          <li>قدرت اول نظامی منطقه و دارای امن ترین آسمان منطقه</li>
+          <li>جزء چهار کشور موفق در شبیه سازی حیوانی</li>
+          <li>
+            دومین کشور برتر دنیا در تحقیقات مغز و نخاع و جزء ده کشور دنیا از نظر
+            پیوند اعضای بدن
+          </li>
+          <li>چزء هشت کشور صاحب چرخه کامل فضایی</li>
+          <li>سومین کشور سدساز دنیا و سومین کشور از نظر رشد شبکه برق</li>
+          <li>جزء ده کشور برتر دنیا در علوم نانوفناوری</li>
+          <li>
+            جزء بیشت کشور سازنده ناوشکن در دنیا و تنها سازنده سریعترین اژدر دنیا
+            (۱۰۰ متر در ثانیه)
+          </li>
+          <li>
+            جزء چهار کشور سازنده پهپاد موشک انداز در دنیا، شکار پهپاد rq170 فوق
+            پیشرفته آمریکا و ساخت مدل ایرانی آن
+          </li>
+          <li>تنها کشور مستقلی که خود به تکنولوژی هسته ای دست یافت</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div class="step slide" data-x="3000" data-y="1000">
+        <img
+          src="./EaeBlRFWsAgh06F.jpg"
+          alt=""
+          width="500"
+          style="display: block; margin: 2rem auto"
+        />
+      </div>
+      <div class="step slide" data-x="3000" data-y="2500">
+        <h1>
+          البته با وجود همه این پیشرفت ها هنوز در برخی عرصه ها نقاط ضعفی داریم
+          مه باید با مجاهدت و با اتکا به نیروی ایمان بر این ضعف ها غلبه کنیم
+        </h1>
+      </div>
+      <div class="step slide" data-x="3000" data-y="4000">
+        <h1>نقشه های شیطانی</h1>
+        <p>
+          مشرکان مکه با ظهور اسلام موقعیت خود را در خطر دیدند. ابندا نلاش کردند
+          با پیشنهاد های فریبنده به پیامبر اکرم (ص) ایشان را از ادامه دعوت به
+          اسلام منصرف کنند اما هنگامی که دیدند نمیتوانند رسول خدا را فریب دهند
+          مسلمانان را در محاصره شدید اقتصادی در شعب ابی طالب قرار دادند تا دست
+          از اسلام بردارند و تحت سلطه مشرکان قرار گیرند
+        </p>
+        <hr />
+        <p>
+          محاصره اقتصادی، حمله نظامی، ترور و بمب گذاری، تفرقه افکنی و تلاش برای
+          کودتا و ایجاد جنگ داخلی و... همه نقشه هایی بودند که استعمارگران بارها
+          و بارها آنها را پس از انقلاب به کار گرفتند اما یاز هم نتوانستند مردم
+          مسلمان ایران را به زانو دربیاورند پس از این مراحل بود مه آنان به فکر
+          استفاده از آخرین و مخرب ترین سلاح خود در برابر ملت ایران افتادند.
+          سلاحی که از بمب هسته ای نیز خطرناک تر است
+        </p>
+      </div>
+      <div class="step slide" data-x="3000" data-y="5500">
+        <h1>شبیخون فرهنگی</h1>
+        <p>
+          جنگ های نظامی هزینه زیادی دارد و در حال حاضر آمریکا دریافته است که با
+          هزینه کتر میتوان با کشورهای دیگر مبارزه کرد و آن راهکار جدیدی به نام
+          جنگ نرم یا شبیخون فرهنگی است
+        </p>
+        <hr />
+        <p>
+          آمریکایی که حتی به بیمار های ما هم رحم نمیکند و مانع ورود دارو به
+          ایران میشود چگونه انقدر به فکر سرگرمی مردم ایران است و شبکه های
+          ماهواره ای مختلف فارسی زبان را راه میاندازد و فیلم و سریال های فارسی
+          را به طور رایگان برای ما منتشر میکند ؟
+        </p>
+        <hr />
+        <p>
+          این تلاش های همه جانبه آمریکا برای تخریب فرهنگ جوانان ایرانی همه بخشی
+          از جنگ ترم علیه ملت ماست. آنها به خوبی میدانند که اگر جوانان مسلمان به
+          دستورات اسلام درباره حفظ حجاب و پاکدامنی عمل کنند شکست دادن آنها بسیار
+          دشوار خواهد شد پس تمام تلاش خود را به کار میبندد تا آنها را از تعلیمات
+          حکیمانه اسلام دور نگه دارند
+        </p>
+      </div>
+      <div class="step slide" data-x="3000" data-y="7000">
+        <h1>اکنون ارزش این کلمات نورانی امیر مومنان برای ما روشن تر میشود</h1>
+        <p
+          style="
+            color: green;
+            background: yellow;
+            padding: 2rem;
+            border-radius: 2rem;
+            line-height: 3rem;
+          "
+        >
+          پاداش انسان عفیف و پاکدامنی که قدرت انجام گناه را دارد، ولی خود را
+          آلوده نمیکند، کمتر از پاداش مجاهد شهید در راه خدا نیست. انسان پاکدامن
+          نزدیک است فرشته ای از فرشته ها شود
+        </p>
+      </div>
+      <div class="step slide" data-x="3000" data-y="8500">
+        <h1>خودت را امتحان کن</h1>
+        <ol>
+          <li>ثمرات انقلاب اسلامی ایران را به صورت خلاصه بیان کنید.</li>
+          <li>
+            چند نمونه از اقدامات ابرقدرت ها برای شکست جمهوری اسلامی ایران را
+            توضیح دهید
+          </li>
+          <li>
+            خطرناک ترین سلاح دشمن در جنگ علیه انقلاب اسلامی ایران چیست ؟ توضیح
+            دهید
+          </li>
+          <li>
+            هدف اصلی دشمنان را از اجرای نقشه های مختلف در کشور های اسلامی بیان
+            کنید.
+          </li>
+        </ol>
+      </div>
+      <div class="step slide" data-x="6000" data-y="-1500">
+        <h1>درس دهم - مسئولیت همگانی</h1>
+        <img
+          src="https://kelasedarsi.ir/wp-content/uploads/2019/12/170622_orig-min.jpg"
+          width="500"
+          alt=""
+          style="display: block; margin: 3rem auto; border-radius: 100%"
+        />
+      </div>
     </div>
 
     <script src="./impress.js"></script>
